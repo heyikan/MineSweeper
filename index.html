@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Minesweeper Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="stopwatch.js"></script>
+	<script type="text/javascript" src="sweeper.js"></script>
+
+</head>
+
+<body>
+	<h1>Minesweeper</h1>
+	<h4>Classic minesweeper game. Built with<br>
+	HTML5,CSS3,JS.<br> For best experience use Chrome.<br>
+	To read an information about Minesweeper<br> click: <i>"About Minesweeper"</i></h4>
+
+	<!-- stopwatch -->
+	<div class="box" >
+	<table style="float:right">
+	<tr><td><div class="watch" id="timer_id"></div></td></tr>
+	<tr><td><div class="watch" id="moves"></div></td></tr>
+<!--	<tr><td><div id="save_container"></div></td></tr>-->
+	</table>
+	</div>
+	<br>
+	<h1 id="container_loser"></h1>
+	<h1 id="container_winner"></h1>
+	<h1 id="asistan"></h1>
+	<table>
+	
+	
+	<!-- Dimentions	-->
+	<tr>
+	<form name ="dimention" id="dimention_frm" action="#">
+	 
+	<td><select name="dmnt" id="dimention_level">
+		<option value="%s" selected="selected">--- Select Dimention ---</option> 
+		<option value="Smallest">Smallest</option>
+		<option value="Small">Small</option>
+		<option value="Normal">Normal</option>
+		<option value="Big">Big</option>
+		<option value="Huge">Huge</option>
+	</select></td>
+	<td><input type="button" name="submit" value="Set Dimention"
+	onclick="setDimention();" /> 
+	</form>
+	</td>
+	</tr>
+	
+	<tr>
+	<!-- Difficulty	-->
+	<form name ="subscribe" id="subscribe_frm" action="#">
+	<td><select name="diff" id="difficult_level">
+		<option value="%s" selected="selected">--- Select Difficulty ---&nbsp &nbsp </option> 
+		<option value="Easiest">Easiest</option>
+		<option value="Easy">Easy</option>
+		<option value="Normal">Normal</option>
+		<option value="Hard">Hard</option>
+		<option value="Hardest">Hardest</option>
+	</select></td>
+	<td><input type="button" name="submit" value="Set Difficulty &nbsp "
+	onclick="setDifficulty();" />
+	</form>
+	</td>
+	<tr><td><div class="results" id="result_dimention"></div><td></tr>
+	<tr><td><div class="results" id="result_difficulty"></div><td></tr>
+	</table>
+
+	<div id="board" style="text-align:center;">
+	</div>
+	<div style="text-align:center; margin:20px;">
+	<button onclick="printIt()">Play</button>
+	<button onclick="location.href='about.html'">About Minesweeper</button>
+	</div>
+</body>
+</html>
