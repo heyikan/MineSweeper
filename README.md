@@ -4,9 +4,7 @@ MineSweeper
 This is The Classic Minesweeper game. Built with HTML5,CSS3,JS.
 
 
-To Run Project, Please Download it following link: 
 
-        http://yadi.sk/d/4SsBaTfsQEoNB
 
 <h5>First Screen</h5>
 ![1](https://cloud.githubusercontent.com/assets/7510274/2977033/c756d518-dba6-11e3-921a-af7f75fd4dae.JPG)
